@@ -1,0 +1,285 @@
+
+
+/* Global*/
+body {
+	background: #E95C41;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #391401
+}
+
+/*Header*/
+.site-header {
+	margin: 1em;
+	position: relative;
+}
+
+
+.site-header__logo {
+	font-family: 'Vampiro One', cursive;
+	font-size: 2em;
+}
+
+.site-header__menu-trigger {
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	padding: 0.625em;
+	width: 3.5em;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+
+
+.site-header__menu-trigger svg {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.site-header__nav {
+	margin-top: 2em;
+}
+
+
+
+.site-header__nav a {
+	font-size: 1.2em;
+	text-decoration: none;
+	padding: 0.375em;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	text-align: center;
+	display: block;
+	margin: 0.375em;
+}
+
+
+
+
+
+.hero {
+	padding: 0 1em;
+	margin-bottom: 2.5em;
+}
+
+.hero__image {
+	border-bottom: 1.5em solid #5c5d70;
+	margin-bottom: 2.5em;
+	margin-top: 2.5em;
+	margin-right: -1em;
+	margin-left: -1em;
+}
+
+.hero__image img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.hero__header {
+	font-size: 3em;
+	font-family: 'Lora', serif;
+	text-align: center;
+	letter-spacing: -0.05em;
+	line-height: 100%;
+	margin-bottom: 0.83em;
+}
+
+
+.hero__header em {
+	color: white;
+	font-style: normal;
+}
+
+.hero__quote {
+	text-align: center;
+	max-width: 25em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.hero__quote__text {
+	font-size: 1.25em;
+	font-family: 'Lora', serif;
+	font-style: italic;
+}
+
+.hero__quote__name {
+	font-size: 1.1em;
+	margin-top: 0.5em;
+}
+
+/*section*/
+.section {
+	margin: 2.5em 0;
+	padding: 2.5em 1em 0;
+	border-top: 1px solid #391401;
+}
+
+.section__header {
+	font-size: 1.5em;
+	font-family: 'Lora', serif;
+	text-align: center;
+	letter-spacing: -0.03em;
+	margin-bottom: 1.67em;
+}
+
+.toc__item {
+	text-align: center;
+	margin-bottom: 2.5em;
+}
+
+
+.toc__link {
+	text-decoration: none;
+	display: block;
+}
+
+.toc__image {
+	height: 10em;
+	width: 10em;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto 1.5em;
+	padding: 1em;
+	background: radial-gradient(50% 50% at 50% 50%,
+			#FFFFFF 0%, #D0D0E7 100%)
+}
+
+.toc__image img {
+	max-width: 100%;
+	mix-blend-mode: multiply;
+}
+
+.toc__header {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0.5em;
+	font-size: 1.2em;
+}
+
+.toc__lead-in {
+	max-width: 20em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Button*/
+
+.button {
+	font-size: 1.2em;
+	background-color: #5c5d70;
+	color: white;
+	text-decoration: none;
+	padding: 0.5em 1.25em;
+	box-shadow: 0.25em 0.25em 0 rgba(0, 0, 0, 0.25);
+}
+
+/*Mailing list*/
+.mailing-list {
+	text-align: center;
+}
+
+/*footer*/
+.site-footer {
+	padding: 2em 1em;
+	margin-top: 6em;
+	background-color: #391401;
+	color: white;
+}
+
+@media screen and (min-width: 800px) {
+	.site-footer p {
+		max-width: 60em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.toc__item {
+		width: 33.33%;
+		margin-right: 2em;
+		margin-bottom: 0;
+	}
+
+	.toc__item:last-child {
+		margin-right: 0;
+	}
+
+	.toc {
+		display: flex;
+	}
+
+	.section__header {
+		text-align: left;
+		font-size: 1.7em;
+	}
+
+	.hero__quote {
+		margin-top: 2.5em;
+		font-size: 1.2em;
+	}
+
+	.hero__header {
+		margin-bottom: 0;
+		font-size: 4em;
+		text-align: left;
+		position: relative;
+	}
+
+	.hero__header:before {
+		content: '';
+		position: absolute;
+		width: 1.51em;
+		height: 0.97em;
+		top: -1.2em;
+		left: -0.5em;
+		background-image: url(../images/arrow.svg);
+		background-size: contain;
+	}
+
+	.hero__image {
+		border: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.site-wrapper {
+		max-width: 60em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 1em;
+	}
+
+	.site-header {
+		display: flex;
+		justify-content: space-between;
+		max-width: 60em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 1em;
+	}
+	.site-header__menu-trigger {
+		display: none;
+	}
+	.hero__wrapper {
+		display: flex;
+		align-items: center;
+		border-bottom: 1.5em solid #5c5d70;
+	}
+	.site-header__nav {
+		margin-top: 0;
+	}
+
+	.site-header__nav ul {
+		display: flex;
+	}
+
+	.site-header__nav li {
+		margin-right: 0, 5em;
+	}
+
+	.site-header__nav li:last-child {
+		margin-right: 0;
+	}
+}
